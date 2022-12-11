@@ -42,3 +42,18 @@ bargraph_forest = all_values_totalpol.plot.bar(x = 'Country Name', y = None,font
 plt.legend(loc = 0)
 
 plt.show()
+
+
+''' GreenHousegas emission Bar plot'''
+
+greenhouse_df = values_axis("EN.ATM.GHGT.ZG")
+
+bargraph_greenhouse = greenhouse_df.plot.bar(x = 'Country Name', y = None,fontsize='12', title = "GreenHouse Gas Emission",width = 0.8, edgecolor='blue')
+
+plt.legend(loc = 0)
+
+plt.show()
+
+''' Correlation'''
+
+''' Mean and Median of the data for the total population the world'''
