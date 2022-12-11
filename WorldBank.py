@@ -31,3 +31,14 @@ def values_axis(indicator):
     country_codes = forest_area.set_index('Country Code')
     data_selected = country_codes.loc[["SAS", "IND", "CHN", "ZAF", "PAK", "USA"], ['Country Name', '2000', '2001', '2002', '2003', '2004', '2005', '2006']]  
     return data_selected
+
+''' total population of bar plot '''
+
+all_values_totalpol = values_axis("SP.POP.TOTL")
+
+
+bargraph_forest = all_values_totalpol.plot.bar(x = 'Country Name', y = None,fontsize='12', title = "Total Population",width = 0.6, edgecolor='blue')
+
+plt.legend(loc = 0)
+
+plt.show()
