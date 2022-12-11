@@ -57,3 +57,13 @@ plt.show()
 ''' Correlation'''
 
 ''' Mean and Median of the data for the total population the world'''
+
+dataframe_mean = all_values_totalpol.mean() # Gives
+print(dataframe_mean)
+dataframe_median = all_values_totalpol.median()
+print(dataframe_median)
+
+xdata=['2000','2001', '2002', '2003', '2004', '2005', '2006']  
+y_mean = ['6.966067e+08', '7.066986e+08', '7.166145e+08', '7.263613e+08', '7.360363e+08', '7.456488e+08', '7.551682e+08']
+y_median = ['669368979.5', '679984524.5', '690471190.0', '700815539.5', '711214382.0', '721563261.5', '731933101.5']
+
