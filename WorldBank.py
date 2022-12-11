@@ -77,3 +77,17 @@ plt.title('Median of the total population accordingly to years', fontsize = 15, 
 plt.xticks(rotation=45)
 plt.show()
 
+
+indicator = ['Forest area (sq. km)', 'Urban population', 'Agricultural land (% of land area)', 'Cereal yield (kg per hectare)', 'CO2 emissions (kt)', 'Population growth (annual %)', 'Agricultural land (sq. km)']
+year = ['2000', '2001', '2002', '2003', '2004', '2005', '2006']
+
+def heatmap(countryname):    
+    Countryname = read_data[read_data['Country Name'] == countryname]   
+    heatmap_data = Countryname.set_index('Indicator Name')
+    heatmap_data = heatmap_data.loc[indicator,year].transpose()
+    sns.heatmap(heatmap_data.corr(), cmap='Accent', linewidths=0.1, annot=True)
+    plt.show()
+    
+    
+heatmap('India')
+heatmap('China')
