@@ -67,3 +67,13 @@ xdata=['2000','2001', '2002', '2003', '2004', '2005', '2006']
 y_mean = ['6.966067e+08', '7.066986e+08', '7.166145e+08', '7.263613e+08', '7.360363e+08', '7.456488e+08', '7.551682e+08']
 y_median = ['669368979.5', '679984524.5', '690471190.0', '700815539.5', '711214382.0', '721563261.5', '731933101.5']
 
+plt.barh(xdata, y_mean, color = 'green')
+plt.title('Mean of the total population accordingly to years', fontsize = 15, color = 'Blue')
+plt.xticks(rotation=45)
+plt.show()
+
+plt.bar(xdata,y_median, color = 'orange')
+plt.title('Median of the total population accordingly to years', fontsize = 15, color = 'Blue')
+plt.xticks(rotation=45)
+plt.show()
+
