@@ -25,3 +25,9 @@ def load_file(filename):
 t_countrydf,t_columndf,read_data = load_file(r"C:\Users\koush\Downloads\API_19_DS2_en_csv_v2_4700503.csv") 
 
 read_data
+
+def values_axis(indicator):
+    forest_area = read_data[read_data['Indicator Code'] == indicator]
+    country_codes = forest_area.set_index('Country Code')
+    data_selected = country_codes.loc[["SAS", "IND", "CHN", "ZAF", "PAK", "USA"], ['Country Name', '2000', '2001', '2002', '2003', '2004', '2005', '2006']]  
+    return data_selected
