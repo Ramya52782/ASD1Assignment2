@@ -157,8 +157,6 @@ plt.show() # plots the bar graph
 # heatmap of country India    
 heatmap('India')
 
-#--------------------------------------------------------------------------------------
-
 # heat map 2
 
 # heatmap of country China
